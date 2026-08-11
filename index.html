@@ -3,86 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ela SAF</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-        }
-
-        /* En dış çerçeve */
-        .container {
-            width: 95%;
-            margin: auto;
-            border: 1px solid white;
-            background-color: white;
-        }
-
-        /* Üst başlık alanı */
-        .header {
-            background-color: #2f6690;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .header h1 {
-            color: white;
-            font-size: 20px;
-            margin: 0;
-        }
-
-        .header p {
-            color: white;
-            font-size: 15px;
-            margin: 15px 0;
-        }
-
-        /* Menü */
-        .menu {
-            display: flex;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        .menu a {
-            background-color: #4a7dae;
-            color: white;
-            text-decoration: none;
-            padding: 8px 12px;
-            border-radius: 3px;
-            font-size: 10px;
-            transition: 0.2s;
-        }
-
-        .menu a:hover {
-            background-color: #365f86;
-        }
-    </style>
+    <title>Ela Saf - Kişisel Web Sitesi-11.08.2026</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <div class="container">
-
-        <div class="header">
-
-            <h1>Merhaba Ben Ela SAF</h1>
-
-            <p>İç Mimarlık ve Web Tasarımı Öğrencisi</p>
-
-            <div class="menu">
-                <a href="#">Hakkımda</a>
-                <a href="#">Yeteneklerim</a>
-                <a href="#">Derslerim</a>
-                <a href="#">İletişim</a>
+    <!-- ÜST KISIM -->
+    <header class="header">
+        <h1>Ela Saf</h1>
+        <p>İç Mimarlık ve Web Tasarımı Öğrencisi</p>
+        <!-- MENÜ -->
+        <nav class="menu">
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#yetenekler">Yeteneklerim</a>
+            <a href="#dersler">Derslerim</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+    <!-- ANA İÇERİK -->
+    <main class="container">
+        <!-- HAKKIMDA -->
+        <section id="hakkimda">
+            <h2>Hakkımda</h2>
+            <div class="card">
+                <p>
+                    Merhaba! Ben Ela. İç Mimarlık bölümünde
+                    okuyorum aynı zamanda web tasarımı öğreniyorum.
+                    Bu sayfayı HTML ve CSS dersinde öğrendiklerimi
+                    kullanarak hazırladım.
+                </p>
+                <p>
+                    Boş zamanlarımda kitap okumayı, resim yapmayı ve müzik dinlemeyi seviyorum. 
+                    Ayrıca yeni teknolojileri takip etmeyi ve yeni şeyler öğrenmeyi seviyorum.
+                </p>
             </div>
-
-        </div>
-
-    </div>
-
+        </section>
+        <!-- YETENEKLER -->
+        <section id="yetenekler">
+            <h2>Yeteneklerim</h2>
+            <div class="card">
+                <ul>
+                    <li>HTML ile sayfa yapısı kurmak</li>
+                    <li>CSS ile renk, yazı ve boşluk ayarlamak</li>
+                    <li>Basit tablo ve form hazırlamak</li>
+                    <li>Takım çalışması ve sunum</li>
+                    <li>İç Mimarlık Tasarımı</li>
+                    <li>3D Modelleme</li>
+                    <li>Resim ve Grafik Tasarımı</li>
+                    <li>Proje Yönetimi</li>
+                </ul>
+            </div>
+        </section>
+        <!-- DERSLER -->
+        <section id="dersler">
+            <h2>Bu Dönem Aldığım Dersler</h2>
+            <div class="card table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ders Adı</th>
+                            <th>Kredi</th>
+                            <th>Not</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tasarım Sütüdyosu IV</td>
+                            <td>10</td>
+                            <td>CB</td>
+                        </tr>
+                        <tr>
+                            <td>3 Boyutlu Tasarım</td>
+                            <td>5</td>
+                            <td>AA</td>
+                        </tr>
+                        <tr>
+                            <td>Rölöve</td>
+                            <td>5</td>
+                            <td>BA</td>
+                        </tr>
+                        <tr>
+                            <td>Mekan ve Felsefe</td>
+                            <td>4</td>
+                            <td>AA</td>
+                        </tr>
+                        <tr>
+                            <td>Aydınlatma Tasarımı</td>
+                            <td>4</td>
+                            <td>BB</td>
+                        </tr>
+                        <tr>
+                            <td>Toplumsal Duyarlılık ve Katkı</td>
+                            <td>2</td>
+                            <td>AA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- İLETİŞİM -->
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <div class="card">
+                <p>
+                    Bana mesaj göndermek için aşağıdaki formu doldurabilirsiniz.
+                </p>
+                <form>
+                    <label for="ad">Adınız:</label>
+                    <input
+                        type="text"
+                        id="ad"
+                        name="ad"
+                        placeholder="Adınızı yazın"
+                    >
+                    <label for="email">E-posta:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="mail@mail.com"
+                    >
+                    <label for="mesaj">Mesajınız:</label>
+                    <textarea
+                        id="mesaj"
+                        name="mesaj"
+                        placeholder="Mesajınızı yazın"
+                    ></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Ela Saf - Web Tasarım Dersi Ödevi
+        </p>
+    </footer>
 </body>
 </html>
