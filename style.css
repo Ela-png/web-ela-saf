@@ -1,0 +1,339 @@
+/* GENEL AYARLAR */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f1f2f6;
+
+    color: #333;
+
+    font-size: 14px;
+}
+
+
+
+/* ÜST BAŞLIK */
+
+.header {
+    background-color: #2a639c;
+
+    color: white;
+
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 18px;
+}
+
+
+.header h1 {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+
+.header p {
+    margin: 4px 0 12px;
+
+    font-size: 12px;
+}
+
+
+
+/* MENÜ */
+
+.menu {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+.menu a {
+    background-color: #4a7dae;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    border-radius: 3px;
+
+    font-size: 10px;
+
+    transition: 0.2s;
+}
+
+
+.menu a:hover {
+    background-color: #165086;
+}
+
+
+
+/* ANA ALAN */
+
+.container {
+    width: 680px;
+
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    padding: 20px 0;
+}
+
+
+
+/* BÖLÜMLER */
+
+section {
+    margin-bottom: 20px;
+}
+
+
+section h2 {
+    color: #3178bd;
+
+    font-size: 14px;
+
+    border-bottom: 2px solid #6aa4da;
+
+    padding-bottom: 6px;
+
+    margin-bottom: 9px;
+}
+
+
+
+/* KART */
+
+.card {
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 3px;
+
+    padding: 12px;
+}
+
+
+.card p {
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    margin-top: 0;
+}
+
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* YETENEK LİSTESİ */
+
+.card ul {
+    margin: 0;
+
+    padding-left: 18px;
+}
+
+
+.card li {
+    font-size: 10px;
+
+    margin-bottom: 7px;
+}
+
+
+.card li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* TABLO */
+
+.table-container {
+    padding: 8px;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 10px;
+}
+
+
+thead {
+    background-color: #276db2;
+
+    color: white;
+}
+
+
+th {
+    text-align: left;
+
+    padding: 7px;
+}
+
+
+td {
+    padding: 7px;
+
+    border: 1px solid #ddd;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+
+
+/* FORM */
+
+form {
+    margin-top: 12px;
+}
+
+
+label {
+    display: block;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    border: 1px solid #ddd;
+
+    border-radius: 3px;
+
+    padding: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #2a6fb4;
+}
+
+
+textarea {
+    height: 60px;
+
+    resize: vertical;
+}
+
+
+
+/* GÖNDER BUTONU */
+
+button {
+    background-color: #2a6db0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 3px;
+
+    padding: 8px 14px;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #1f62a1;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 13px;
+
+    margin-top: 10px;
+}
+
+
+footer p {
+    margin: 0;
+
+    font-size: 9px;
+}
+
+
+
+/* TELEFON */
+
+@media (max-width: 600px) {
+
+    .container {
+        max-width: calc(100% - 24px);
+    }
+
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+
+    .menu a {
+        padding: 7px 9px;
+    }
+
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+}
